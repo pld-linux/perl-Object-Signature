@@ -6,7 +6,7 @@
 %define	pdir	Object
 %define	pnam	Signature
 Summary:	Signature - Generate cryptographic signatures for objects
-#Summary(pl):	
+Summary(pl):	Signature - generowanie podpisów kryptograficznych dla obiektów
 Name:		perl-Object-Signature
 Version:	1.03
 Release:	1
@@ -21,16 +21,25 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Object::Signature is an abstract base class that you can inherit from in
-order to allow your objects to generate unique cryptographic signatures.
+Object::Signature is an abstract base class that you can inherit from
+in order to allow your objects to generate unique cryptographic
+signatures.
 
 The method used to generate the signature is based on Storable and
 Digest::MD5. The object is fed to Storable::nfreeze to get a string,
 which is then passed to Digest::MD5::md5_hex to get a unique 32
-character hexidecimal signature.
+character hexadecimal signature.
 
-# %description -l pl
-# TODO
+%description -l pl
+Object::Signature to abstrakcyjna klasa bazowa, z której mo¿na
+dziedziczyæ, aby umo¿liwiæ obiektom generowanie unikalnych podpisów
+kryptograficznych.
+
+Metoda u¿ywana do generowania podpisów opiera siê na Storable i
+Digest::MD5. Obiekt jest przekazywany do Storable::nfreeze w celu
+uzyskania ³añcucha znaków, który jest nastêpnie przekazywany do
+Digest::MD5::md5_hex w celu uzyskania unikalnego 32-znakowego
+podpisu szesnastkowego.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
