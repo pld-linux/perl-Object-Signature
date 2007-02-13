@@ -6,7 +6,7 @@
 %define	pdir	Object
 %define	pnam	Signature
 Summary:	Signature - Generate cryptographic signatures for objects
-Summary(pl.UTF-8):   Signature - generowanie podpisów kryptograficznych dla obiektów
+Summary(pl.UTF-8):	Signature - generowanie podpisów kryptograficznych dla obiektów
 Name:		perl-Object-Signature
 Version:	1.03
 Release:	1
