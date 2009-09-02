@@ -8,13 +8,13 @@
 Summary:	Signature - Generate cryptographic signatures for objects
 Summary(pl.UTF-8):	Signature - generowanie podpisów kryptograficznych dla obiektów
 Name:		perl-Object-Signature
-Version:	1.03
-Release:	2
+Version:	1.05
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f8445896df5a63f0afe2f2a7b1025bf7
+# Source0-md5:	b154a57c64ac06bd47b364c924bf3738
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
