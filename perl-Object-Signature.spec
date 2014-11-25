@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	Object
 %define	pnam	Signature
+%include	/usr/lib/rpm/macros.perl
 Summary:	Signature - Generate cryptographic signatures for objects
 Summary(pl.UTF-8):	Signature - generowanie podpisów kryptograficznych dla obiektów
 Name:		perl-Object-Signature
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	387fd336d07bd5e74669ec33515c28ef
+URL:		http://search.cpan.org/dist/Object-Signature/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -38,8 +39,8 @@ kryptograficznych.
 Metoda używana do generowania podpisów opiera się na Storable i
 Digest::MD5. Obiekt jest przekazywany do Storable::nfreeze w celu
 uzyskania łańcucha znaków, który jest następnie przekazywany do
-Digest::MD5::md5_hex w celu uzyskania unikalnego 32-znakowego
-podpisu szesnastkowego.
+Digest::MD5::md5_hex w celu uzyskania unikalnego 32-znakowego podpisu
+szesnastkowego.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
